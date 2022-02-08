@@ -1,0 +1,74 @@
+@import "../../../../../styles/variables";
+
+.container {
+  display: flex;
+  background-color: $ligth-color;
+  width: 100%;
+  height: 100%;
+  padding: 25px;
+
+  .container-form {
+    width: 40%;
+    background-color: $ligth-color;
+  }
+
+  .container-img {
+    width: 60%;
+    background-color: $ligth-color;
+    img {
+      // height: 100%;
+      object-fit: cover;
+      padding: 15px;
+    }
+  }
+
+  button {
+    width: 75%;
+    div {
+      display: flex;
+      justify-content: center;
+    }
+  }
+
+  mat-card {
+    height: 75%;
+    width: 75%;
+    animation: login-animation 1s;
+  }
+
+  mat-card-header {
+    padding-top: 25px;
+    padding-bottom: 20px;
+    display: flex;
+    justify-content: center;
+  }
+
+  mat-form-field {
+    display: block;
+  }
+
+  mat-card-actions {
+    display: flex;
+    justify-content: center;
+  }
+
+  @keyframes login-animation {
+    from {
+      opacity: 0.35;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+
+  @media only screen and (max-width: 600px) {
+    .container-form {
+      width: 100%;
+    }
+    .container-img {
+      width: 0%;
+      display: none;
+      position: block;
+    }
+  }
+}

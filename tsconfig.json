@@ -15,6 +15,13 @@
     "moduleResolution": "node",
     "importHelpers": true,
     "target": "es2015",
+    "paths": {
+      "@interfaces/*": ["src/app/modules/shared/interfaces/*"],
+      "@services/*": ["src/app/core/*"],
+      "@styles/*": ["src/styles/*"],
+      "@environments/*": ["src/environments/*"],
+      "@shareds/*": ["src/app/modules/shared/components"],
+    },
     "module": "es2020",
     "lib": [
       "es2018",

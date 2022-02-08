@@ -1,0 +1,41 @@
+.container-sidenav {
+  h3 {
+    padding-top: 10px;
+    text-align: center;
+  }
+
+  .user-icon {
+    img {
+      height: 100px;
+    }
+  }
+  .item-menu {
+    width: 100%;
+    padding: 20px;
+  }
+  figure.user-icon {
+    padding-top: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+.header {
+  display: flex;
+  div {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    h2 {
+      margin: 0;
+    }
+  }
+}
+
+.menu-icon {
+  img {
+    height: 40px;
+  }
+}

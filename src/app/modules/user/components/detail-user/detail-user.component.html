@@ -1,0 +1,18 @@
+<mat-card class="container-mat">
+  <mat-card-header>
+    <mat-card-title
+      >{{ _user?.first_name }} {{ _user?.last_name }}</mat-card-title
+    >
+  </mat-card-header>
+  <img
+    mat-card-image
+    src="{{ _user?.avatar || 'assets/user.png' }}"
+    alt="Extraida desde regres.in api"
+  />
+  <mat-card-content>
+    <p>Id: {{ _user?.id }}</p>
+    <p>Nombre: {{ _user?.first_name }}</p>
+    <p>Apellido: {{ _user?.last_name }}</p>
+    <p>Email: {{ _user?.email }}</p>
+  </mat-card-content>
+</mat-card>

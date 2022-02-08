@@ -1,0 +1,64 @@
+@import "./variables";
+@import "./components/buttons";
+@import "./components/table";
+@import "./components/inputs";
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  height: 100%;
+}
+
+body {
+  // background-color: $ligth-color;
+  height: 100%;
+}
+
+app-loader {
+  display: flex;
+  align-self: center;
+  padding-right: 7px;
+}
+
+.mat-sidenav-container {
+  height: 100%;
+}
+
+.mat-drawer, .mat-sidenav-container, .item-menu, .mat-table {
+  background: $ligth-color;
+  color: $primary-color;
+}
+
+.primary-text-color {
+  color: $primary-color;
+}
+
+.mat-card {
+  background: $ligth-color;
+}
+
+.secondary-text-color {
+  color: $secondary-color;
+}
+
+.element-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.cursor-pointer {
+  cursor: pointer;
+}
+
+.alert-error {
+  color: red;
+}
+
+.alert-success {
+  color: green;
+}
